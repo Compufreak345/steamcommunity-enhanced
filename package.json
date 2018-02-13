@@ -4,7 +4,7 @@
   "description": "A browser plugin to enhance the SteamCommunity",
   "main": "index.js",
   "scripts": {
-    "test": "web-ext run"
+    "start": "concurrently --kill-others 'tsc -w' 'cd ./dist && web-ext run'"
   },
   "repository": {
     "type": "git",
@@ -23,5 +23,11 @@
   "bugs": {
     "url": "https://github.com/Compufreak345/steamcommunity-enhanced/issues"
   },
-  "homepage": "https://github.com/Compufreak345/steamcommunity-enhanced#readme"
+  "homepage": "https://github.com/Compufreak345/steamcommunity-enhanced#readme",
+  "dependencies": {
+    "nodemon": "^1.14.12"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.1"
+  }
 }

@@ -1,0 +1,21 @@
+{
+    
+      "manifest_version": 2,
+      "name": "Steamcommunity Enhanced",
+      "version": "0.0.1",
+    
+      "description": "Enhances the Steamcommunity",
+    
+      "content_scripts": [
+        {
+          "matches": ["*://*.steamcommunity.com/discussions/*"],
+          "js": ["discussions.js"]
+        },
+        {
+            "matches": [
+          "*://steamcommunity.com/id/*/home/"],
+            "js": ["activityfeed.js"]
+        }
+      ]
+    
+    }
