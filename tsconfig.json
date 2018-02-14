@@ -2,8 +2,13 @@
     "compilerOptions": {
         "allowSyntheticDefaultImports": true,
         "module": "commonjs",
-        "target": "ES5",
+        "target": "ES6",
         "outDir": "dist/js",
-        "rootDir": "src"
+        "rootDir": "src",
+        "typeRoots": [
+            "./node_modules/@types"
+          ],
+          "emitDecoratorMetadata": true,
+          "experimentalDecorators": true
     }
 }
