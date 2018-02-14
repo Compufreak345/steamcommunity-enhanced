@@ -1,9 +1,9 @@
 {
     "compilerOptions": {
-        "emitDecoratorMetadata": true,
+        "allowSyntheticDefaultImports": true,
         "module": "commonjs",
         "target": "ES5",
-        "outDir": "dist",
+        "outDir": "dist/js",
         "rootDir": "src"
     }
 }
