@@ -9,12 +9,12 @@
       "content_scripts": [
         {
           "matches": ["*://*.steamcommunity.com/discussions/*"],
-          "js": ["discussions.js"]
+          "js": ["discussions/index.js"]
         },
         {
             "matches": [
           "*://steamcommunity.com/id/*/home/"],
-            "js": ["activityfeed.js"]
+            "js": ["activityfeed/index.js"]
         }
       ]
     
